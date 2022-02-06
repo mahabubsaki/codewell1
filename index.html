@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61c1819727.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ["Playfair Display", "serif"]
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                        sitegray: '#2e3038',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black md:pl-16 md:pr-14 font-playfair">
+    <header class="mt-8">
+        <nav class="flex justify-between items-center p-2">
+            <div>
+                <h1 class="text-white font-semibold cursor-pointer text-3xl">Jonathon Speeter</h1>
+            </div>
+            <div class="sm:flex w-1/4 justify-between hidden">
+                <h1 class="text-gray-300 hover:text-white cursor-pointer">Articles</h1>
+                <h1 class="text-gray-300 hover:text-white cursor-pointer">Chat</h1>
+                <h1 class="text-gray-300 hover:text-white cursor-pointer">Award</h1>
+                <h1 class="text-gray-300 hover:text-white cursor-pointer">About</h1>
+            </div>
+            <div>
+                <button
+                    class="p-3 transition ease-in-out duration-1000 bg-amber-300 font-semibold hover:bg-white rounded-md hidden sm:block">Get
+                    in
+                    Touch</button>
+                <i class="fas fa-bars text-white text-2xl sm:hidden pr-1 cursor-pointer"></i>
+            </div>
+        </nav>
+        <section class="my-20">
+            <div class="w-full">
+                <h1 class="text-4xl text-white max-w-sm text-center sm:text-left">Helping companies build better,sealble
+                    software</h1>
+                <p class="text-white my-4 max-w-sm text-center sm:text-left">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit.
+                    Incidunt mollitia
+                    veniam
+                    molestias dolorem
+                    ut reiciendis eveniet provident asperiores? Nostrum voluptates numquam dolor officia tempore earum
+                    debitis sapiente qui exercitationem itaque!</p>
+            </div>
+            <div class="w-full grid grid-cols-3 sm:grid-cols-6 gap-4 p-4">
+                <div class="flex justify-center items-center"><a href="https://www.walmart.com/" target="_blank"><img
+                            src="Assets/Logos/Walmart.svg" alt=""></a>
+                </div>
+                <div class="flex justify-center items-center pt-1"><a href="https://www.jpmorgan.com/"
+                        target="_blank"><img src="Assets/Logos/JP Morgan.svg" alt=""></a></div>
+                <div class="flex justify-center items-center"><a href="https://visa.com" target="_blank"><img
+                            src="Assets/Logos/Visa.svg" alt=""></a></div>
+                <div class="flex justify-center items-center pr-3"><a href="https://tinder.com/" target="_blank"><img
+                            src="Assets/Logos/Tinder.svg" alt=""></a></div>
+                <div class="flex justify-center pt-2"><a href="https://www.samsung.com/us/" target="_blank"><img
+                            src="Assets/Logos/Samsung.svg" alt=""></a></div>
+                <div class="flex justify-center items-center pb-2"><a href="https://www.verizon.com/"
+                        target="_blank"><img src="Assets/Logos/Verizon.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="flex sm:flex-row flex-col sm:justify-between items-center">
+            <div class="w-full sm:w-1/2 sm:mr-6 my-2">
+                <img src="Assets/Spense.png" alt="">
+                <h1 class="text-4xl text-white text-center sm:text-left my-3">Spense.com</h1>
+                <p class="text-white text-center sm:text-left pb-8">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Inventore natus repellat
+                    quis deleniti
+                    modi, perspiciatis reprehenderit! Deserunt modi magnam impedit repellat fugit veritatis ullam quo,
+                    veniam incidunt earum voluptatem debitis saepe maiores, sapiente perferendis repudiandae omnis vel
+                    possimus delectus maxime!</p>
+            </div>
+            <div class="w-full sm:w-1/2 sm:ml-6 my-2">
+                <img src="Assets/YelpCamp.png" alt="">
+                <h1 class="text-4xl text-white text-center sm:text-left my-3">YelpCamp.com</h1>
+                <p class="text-white text-center sm:text-left pb-8">Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.
+                    Inventore natus repellat
+                    quis deleniti
+                    modi, perspiciatis reprehenderit! Deserunt modi magnam impedit repellat fugit veritatis ullam quo,
+                    veniam incidunt earum voluptatem debitis saepe maiores, sapiente perferendis repudiandae omnis vel
+                    possimus delectus maxime!</p>
+            </div>
+        </section>
+        <section class="pl-2 py-8 bg-sitegray flex sm:flex-row sm:justify-between flex-col">
+            <div class="sm:mr-4 w-full sm-w-1/2">
+                <h1 class="text-white text-3xl text-center sm:text-left">A co-founder at one of the world's Largest
+                    community</h1>
+                <p class="text-white my-4 text-center sm:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Consectetur eos
+                    animi
+                    eveniet commodi
+                    molestias esse sint explicabo officiis itaque nesciunt libero nisi suscipit blanditiis aliquam,
+                    voluptate deserunt at aliquid ab molestiae alias accusantium, quod adipisci quaerat! Illum saepe
+                    nobis perferendis!</p>
+            </div>
+            <div class="sm:ml-4 w-full sm-w-1/2">
+                <p class="text-white text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint sunt ab nemo sed
+                    iste rem quis
+                    excepturi officia! Iure, expedita? Voluptates aperiam beatae numquam rerum magnam suscipit,
+                    praesentium nobis maxime. Numquam, commodi tenetur autem minus excepturi qui quos quaerat aliquid
+                    veritatis assumenda quas et obcaecati eius cum eum dolor rerum! Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Dolores officia fuga necessitatibus nostrum perspiciatis dolorem!</p>
+            </div>
+        </section>
+        <section class="py-8">
+            <div class="max-w-sm">
+                <h1 class="text-white text-3xl">Intrested in working with me?</h1>
+                <p class="text-white py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis libero
+                    facilis
+                    ratione quisquam! Odit suscipit explicabo perferendis error iusto quo!</p>
+                <button
+                    class="p-3 transition ease-in-out duration-1000 bg-amber-300 font-semibold hover:bg-white rounded-md">Get
+                    in
+                    Touch</button>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 bg-sitegray pl-2">
+        <section class="flex justify-between items-center">
+            <div>
+                <h1 class="text-xl text-white">Jonathon Speeter</h1>
+            </div>
+            <div class="flex w-2/12 justify-evenly">
+                <div><img src="Assets/Social Icons/Twitter.svg" alt=""></div>
+                <div><img src="Assets/Social Icons/LinkedIn.svg" alt=""></div>
+                <div><img src="Assets/Social Icons/Github.svg" alt=""></div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
